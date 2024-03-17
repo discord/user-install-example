@@ -3,7 +3,6 @@ import { fakeGameItems } from './game.js';
 import { InstallGlobalCommands } from './utils.js';
 
 // Wiki command for game lookup
-// TODO: change to autocomplete??
 const WIKI_COMMAND = {
   name: 'wiki',
   type: 1,

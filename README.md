@@ -1,4 +1,4 @@
-# Getting Started app for Discord
+# User-Installable app for Discord
 
 This project contains a basic example of a game integration for Discord written in JavaScript, built for the [Developing a User-Installable App tutorial](http://discord.com/developers/docs/tutorials/developing-a-user-installable-app).
 

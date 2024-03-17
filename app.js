@@ -14,8 +14,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 // Parse request body and verifies incoming requests using discord-interactions package
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
-// Store for in-progress games. In production, you'd want to use a DB
-const activeGames = {};
 
 /**
  * Interactions endpoint URL where Discord will send HTTP requests
@@ -132,8 +130,6 @@ app.post('/interactions', async function (req, res) {
   if (type === InteractionType.MESSAGE_COMPONENT) {
     const profile = getFakeProfile(0);
     const profileEmbed = createPlayerEmbed(profile);
-    //TODO: will probably need to check app_permissions
-    //TODO: interaction_metadata?
     return res.send({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
