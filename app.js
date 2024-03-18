@@ -127,6 +127,7 @@ app.post('/interactions', async function (req, res) {
     }
   }
 
+  // handle button interaction
   if (type === InteractionType.MESSAGE_COMPONENT) {
     const profile = getFakeProfile(0);
     const profileEmbed = createPlayerEmbed(profile);

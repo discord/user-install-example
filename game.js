@@ -16,6 +16,7 @@ export function getWikiItem(value) {
   return fakeGameItems.find((el) => el.value === value);
 }
 
+// fake profile data for game
 export const fakePlayerProfiles = [
   {
     username: 'WumpusWhisperer',
@@ -103,6 +104,7 @@ export const fakePlayerProfiles = [
   },
 ];
 
+// fake items with descriptions for our lil game
 export const fakeGameItems = [
   {
     name: 'Map',
