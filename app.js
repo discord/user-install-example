@@ -46,6 +46,9 @@ app.post('/interactions', async function (req, res) {
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {
           content: await getServerLeaderboard(req.body.guild.id),
+          allowed_mentions: {
+            parse: [],
+          },
         },
       });
     }
