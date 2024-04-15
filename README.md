@@ -12,6 +12,7 @@ Below is a basic overview of the project structure:
 ├── commands.js -> slash command payloads + helpers
 ├── game.js     -> logic specific to the fake game
 ├── utils.js    -> utility functions and enums
+|-- package-lock.json
 ├── package.json
 ├── README.md
 └── .gitignore
